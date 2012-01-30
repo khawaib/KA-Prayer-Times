@@ -1,0 +1,14 @@
+.icon-48-kaprayertimes { background-image: url(../images/icon-48-kaprayertimes.png); }
+.kaptinputbox {width:50px; text-align:center;}
+/* -------------- View Styling -------------- */
+#cpanel.kaptAdminCpanel {float:left; width:58%;}
+#kaptAdminStats {float:right; width:40%;}
+#kaptAdminStats dl.tabs dt.closed {border:1px solid #ccc;}
+#kaptAdminStats dl.tabs dt.open {background:#fff;border:1px solid #ccc;border-bottom:1px solid #fff;}
+#kaptAdminStats table.adminlist {width:100%;}
+
+#kaptAdminStats #about ul li {clear:both; padding:5px 0;}
+
+div.toolbar span {display:block; float:none; height:32px; margin:0 auto; width:32px;}
+.icon-32-save {background-image:url("../images/icon-32-save.png");}
+.icon-32-share {background-image:url("../images/icon-32-share.png");}

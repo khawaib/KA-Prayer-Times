@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params>
+		<param name="show_comp_heading" type="list" default="1" label="COMP_HEADING" description="COMP_HEADING_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="comp_heading" type="textarea" default="KA Prayer Times" label="COMP_HEADING_TEXT" rows="1" cols="30" description="COMP_HEADING_TEXT_DESC" />
+        
+        <param name="show_page_image" type="list" default="1" label="Image" description="Hides/Shows the image.">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </param>
+        <param name="img_path" type="text" size="70" default="components/com_kaprayertimes/assets/images/com_kaprayertimes.png" label="Image Path" description="Path for image to show on page" />
+        <param name="imagew" type="text" size="5" default="110" label="Image Width" description="Width of Image." />
+        <param name="imageh" type="text" size="5" default="110" label="Image Height" description="Height of image." />
+
+		<param name="show_icons" type="list" default="1" label="Icons" description="TIPPRINTPDFEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+<!--
+        <param name="show_pdf_icon" type="list" default="1" label="PDF Icon" description="PARAMPDF">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+-->
+		<param name="show_print_icon" type="list" default="1" label="Print Icon" description="PARAMPRINT">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+        <param name="print_icon_img_path" type="text" size="70" default="/components/com_kaprayertimes/assets/images/" label="Print icon image path" description="Print icon image Path" />
+        <param name="print_icon_img_name" type="text" default="print_icon.png" label="Print icon image name" description="Print icon image name" />
+<!--
+		<param name="show_email_icon" type="list" default="1" label="Email Icon" description="PARAMEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+-->
+        <param name="show_month_dropdown" type="list" default="1" label="MONTH_DROPDOWN" description="MONTH_DROPDOWN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+        
+        <param name="date_format" type="list" default="d.m.y" label="Date Format" description="Date Format.">
+            <option value="F j, Y">August 14, 1947</option>
+            <option value="j F, Y">14 August, 1947</option>
+            <option value="m.d.y">08.14.47</option>
+            <option value="d.m.y">14.08.47</option>
+            <option value="m.d.Y">08.14.1947</option>
+            <option value="d-m-Y">14-08-1947</option>
+            <option value="d/m/Y">14/08/1947</option>
+            <option value="D, j M Y">Thu, 14 Aug 1947</option>
+        </param>
+        <param name="day_format" type="list" default="D" label="Day Format" description="Day Format.">
+            <option value="D">Fri</option>
+            <option value="l">Friday</option>
+            <option value="j">3</option>
+        </param>
+        <param name="time_format" type="list" default="g:i" label="Time Format" description="Time Format.">
+<!--
+            <option value="H:i:s">17:16:18</option>
+            <option value="h:i:s">05:16:18</option>
+            <option value="g:i a">5:16 pm</option>
+            <option value="g:i A">5:16 PM</option>
+-->
+            <option value="g:i">5:16</option>
+        </param>
+        
+		<param name="show_khutba_message" type="list" default="0" label="SHOW_MESSAGE" description="SHOW_MESSAGE_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="khutba_message" type="textarea" default="Friday Khutba at 12:45pm" label="MESSAGE_TEST" rows="1" cols="30" description="MESSAGE_TEST_DESC" />
+        
+        <field name="@spacer" type="spacer" default="" label="" description="" />
+        <field name="@spacer" type="spacer" default="Frontend column show/hide settings" label="" description="" />
+		<param name="date_column" type="list" default="1" label="DATE_COLUMN" description="DATE_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="day_column" type="list" default="1" label="DAY_COLUMN" description="DAY_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="faj_b_column" type="list" default="1" label="FAJR_BEGINS_COLUMN" description="FAJR_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="faj_j_column" type="list" default="1" label="FAJR_JAMAAT_COLUMN" description="FAJR_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="sunrise_column" type="list" default="1" label="SUNRISE_COLUMN" description="SUNRISE_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="dhuhr_b_column" type="list" default="1" label="DHUHR_BEGINS_COLUMN" description="DHUHR_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="dhuhr_j_column" type="list" default="1" label="DHUHR_JAMAAT_COLUMN" description="DHUHR_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="asr_b_column" type="list" default="1" label="ASR_BEGINS_COLUMN" description="ASR_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="asr_j_column" type="list" default="1" label="ASR_JAMAAT_COLUMN" description="ASR_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="magrib_b_column" type="list" default="1" label="MAGRIB_BEGINS_COLUMN" description="MAGRIB_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="magrib_j_column" type="list" default="1" label="MAGRIB_JAMAAT_COLUMN" description="MAGRIB_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="isha_b_column" type="list" default="1" label="ISHA_BEGINS_COLUMN" description="ISHA_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="isha_j_column" type="list" default="1" label="ISHA_JAMAAT_COLUMN" description="ISHA_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+	
+    
+    <fieldset name="basic" label="COM_KAPRAYERTIMES_LBL" description="COM_KAPRAYERTIMES_LBL_DESC">
+		<field name="show_comp_heading" type="list" default="1" label="COMP_HEADING" description="COMP_HEADING_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="comp_heading" type="textarea" default="KA Prayer Times" label="COMP_HEADING_TEXT" rows="1" cols="30" description="COMP_HEADING_TEXT_DESC" />
+        
+        <field name="show_page_image" type="list" default="1" label="Image" description="Hides/Shows the image.">
+            <option value="0">Hide</option>
+            <option value="1">Show</option>
+        </field>
+        <field name="img_path" type="text" size="70" default="components/com_kaprayertimes/assets/images/com_kaprayertimes.png" label="Image Path" description="Path for image to show on page" />
+        <field name="imagew" type="text" size="5" default="110" label="Image Width" description="Width of Image." />
+        <field name="imageh" type="text" size="5" default="110" label="Image Height" description="Height of image." />
+
+		<field name="show_icons" type="list" default="1" label="Icons" description="TIPPRINTPDFEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+<!--
+        <field name="show_pdf_icon" type="list" default="1" label="PDF Icon" description="PARAMPDF">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+-->
+		<field name="show_print_icon" type="list" default="1" label="Print Icon" description="PARAMPRINT">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+        <field name="print_icon_img_path" type="text" size="70" default="/components/com_kaprayertimes/assets/images/" label="Print icon image path" description="Print icon image Path" />
+        <field name="print_icon_img_name" type="text" default="print_icon.png" label="Print icon image name" description="Print icon image name" />
+<!--
+		<field name="show_email_icon" type="list" default="1" label="Email Icon" description="PARAMEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+-->
+        <field name="show_month_dropdown" type="list" default="1" label="MONTH_DROPDOWN" description="MONTH_DROPDOWN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+        
+        <field name="date_format" type="list" default="d.m.y" label="Date Format" description="Date Format.">
+            <option value="F j, Y">August 14, 1947</option>
+            <option value="j F, Y">14 August, 1947</option>
+            <option value="m.d.y">08.14.47</option>
+            <option value="d.m.y">14.08.47</option>
+            <option value="m.d.Y">08.14.1947</option>
+            <option value="d-m-Y">14-08-1947</option>
+            <option value="d/m/Y">14/08/1947</option>
+            <option value="D, j M Y">Thu, 14 Aug 1947</option>
+        </field>
+        <field name="day_format" type="list" default="D" label="Day Format" description="Day Format.">
+            <option value="D">Fri</option>
+            <option value="l">Friday</option>
+            <option value="j">3</option>
+        </field>
+        <field name="time_format" type="list" default="g:i" label="Time Format" description="Time Format.">
+<!--
+            <option value="H:i:s">17:16:18</option>
+            <option value="h:i:s">05:16:18</option>
+            <option value="g:i a">5:16 pm</option>
+            <option value="g:i A">5:16 PM</option>
+-->
+            <option value="g:i">5:16</option>
+        </field>
+        
+		<field name="show_khutba_message" type="list" default="0" label="SHOW_MESSAGE" description="SHOW_MESSAGE_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="khutba_message" type="textarea" default="Friday Khutba at 12:45pm" label="MESSAGE_TEST" rows="1" cols="30" description="MESSAGE_TEST_DESC" />
+        
+        <field name="@spacer" type="spacer" default="" label="" description="" />
+        <field name="@spacer" type="spacer" default="Frontend column show/hide settings" label="" description="" />
+		<field name="date_column" type="list" default="1" label="DATE_COLUMN" description="DATE_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="day_column" type="list" default="1" label="DAY_COLUMN" description="DAY_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="faj_b_column" type="list" default="1" label="FAJR_BEGINS_COLUMN" description="FAJR_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="faj_j_column" type="list" default="1" label="FAJR_JAMAAT_COLUMN" description="FAJR_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="sunrise_column" type="list" default="1" label="SUNRISE_COLUMN" description="SUNRISE_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="dhuhr_b_column" type="list" default="1" label="DHUHR_BEGINS_COLUMN" description="DHUHR_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="dhuhr_j_column" type="list" default="1" label="DHUHR_JAMAAT_COLUMN" description="DHUHR_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="asr_b_column" type="list" default="1" label="ASR_BEGINS_COLUMN" description="ASR_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="asr_j_column" type="list" default="1" label="ASR_JAMAAT_COLUMN" description="ASR_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="magrib_b_column" type="list" default="1" label="MAGRIB_BEGINS_COLUMN" description="MAGRIB_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="magrib_j_column" type="list" default="1" label="MAGRIB_JAMAAT_COLUMN" description="MAGRIB_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="isha_b_column" type="list" default="1" label="ISHA_BEGINS_COLUMN" description="ISHA_BEGINS_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+		<field name="isha_j_column" type="list" default="1" label="ISHA_JAMAAT_COLUMN" description="ISHA_JAMAAT_COLUMN_DESC">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+	</fieldset>
+</config>

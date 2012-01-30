@@ -1,0 +1,17 @@
+#kaptFilterMonths {overflow:hidden; margin:10px;}
+#kaptIcons {float:right;}
+
+#main .kaptTable h1, .kaptTable tr, .kaptTable td {border:0 none;}
+.kaptTable img {border:0 none;}
+
+table.kaPrayerTimes {background-color:#E7E7E7; border-spacing:1px; color:#666666; width:100%;}
+table.kaPrayerTimes tbody th {font-weight:bold;}
+table.kaPrayerTimes thead th {word-wrap:normal; background:#F0F0F0 none repeat scroll 0 0; border-bottom:1px solid #999999; border-left:1px solid #FFFFFF; color:#666666;text-align:center; font-size:11px;}
+table.kaPrayerTimes td, table.adminlist th {padding:7px; text-align:center;}
+table.kaPrayerTimes tbody tr.row0 {background-color:#FFFFFF; text-align:left;}
+table.kaPrayerTimes tbody tr.row1 {background:#F9F9F9 none repeat scroll 0 0; border-top:1px solid #FFFFFF;}
+table.kaPrayerTimes tbody tr.today {background-color:lightgreen; text-align:left; font-weight:bold;}
+table.kaPrayerTimes tbody tr.row0:hover td, table.adminlist tbody tr.row1:hover td {background-color:#FFFFDD;}
+table.kaPrayerTimes tbody span.time_change {font-weight:bold;}
+table.kaPrayerTimes tfoot td, table.kaPrayerTimes tfoot th {background-color:#F3F3F3; border-top:1px solid #999999; text-align:center;}
+#message {color:#666; margin-left:20px;}

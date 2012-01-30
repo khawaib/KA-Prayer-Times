@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>KA Prayer Times</name>
+    <author>Khawaib Ahmed</author>
+	<authorEmail>khawaib@khawaib.co.uk</authorEmail>
+	<authorUrl>www.Khawaib.co.uk</authorUrl>
+    <creationDate>14 August 2011</creationDate>
+    <license>GNU/GPL</license>
+    <version>1.2.1</version>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>KA Prayer Times</description>
+    
+    <!-- Public front end files -->
+    <files folder="components/com_kaprayertimes">
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>router.php</filename>
+        <filename>kaprayertimes.php</filename>
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+    
+    <!-- Front end translation files -->
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.com_kaprayertimes.ini</language>
+        <language tag="al-AL">al-AL/al-AL.com_kaprayertimes.ini</language>
+    </languages>
+    
+    <!-- SQL query files to execute on installation -->
+    <install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+			<file driver="mysql">install.sql</file>
+			<file charset="utf8" driver="mysqli">install.sql</file>
+			<file driver="mysqli">install.sql</file>
+		</sql>
+    </install>
+    <!-- SQL query files to execute on uninstallation -->
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+			<file driver="mysql">uninstall.sql</file>
+			<file charset="utf8" driver="mysqli">uninstall.sql</file>
+			<file driver="mysqli">uninstall.sql</file>
+		</sql>
+	</uninstall>
+    
+    <!-- administration part -->
+    <administration>
+        <menu view="cpanel" img="components/com_kaprayertimes/assets/images/icon-16-kaprayertimes.png">KAPRAYERTIMES</menu>
+<!--        <menu task="default" img="js/ThemeOffice/component.png">KA Prayer Times</menu>-->
+<!--        <submenu>
+            <menu link="option=com_kaprayertimes">Dashboard</menu>
+            <menu link="option=com_kaprayertimes&amp;view=kaprayertimes">Prayertimes</menu>
+            <menu link="option=com_kaprayertimes&amp;view=uploaddata">Upload Data</menu>
+            <menu link="option=com_kaprayertimes&amp;view=editcss">Edit CSS</menu>
+            <menu link="option=com_kaprayertimes&amp;view=languages">Languages</menu>
+        </submenu>-->
+        
+        <!-- Back-end files -->
+        <files folder="administrator/components/com_kaprayertimes">
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>kaprayertimes.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>install</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>uploads</folder>
+            <folder>views</folder>
+        </files>
+        <!-- Back-end translation files -->
+        <languages folder="administrator/language/en-GB">
+            <language tag="en-GB">en-GB.com_kaprayertimes.ini</language>
+            <language tag="en-GB">en-GB.com_kaprayertimes.menu.ini</language>
+<!--            <language tag="en-GB">en-GB.com_kaprayertimes.sys.ini</language>-->
+        </languages>
+    </administration>
+    
+    <!-- Installation / uninstallation PHP scripts -->
+    <installfile>install.kaprayertimes.php</installfile>
+    <uninstallfile>uninstall.kaprayertimes.php</uninstallfile>
+    
+	<params>
+		<param name="show_comp_heading" default="1" />
+		<param name="comp_heading" default="KA Prayer Times" />
+        <param name="show_page_image" default="1" />
+        <param name="img_path" default="components/com_kaprayertimes/assets/images/com_kaprayertimes.png" />
+        <param name="imagew" default="110" />
+        <param name="imageh" default="110" />
+		<param name="show_icons" default="1" />
+<!--
+        <param name="show_pdf_icon" type="list" default="1" label="PDF Icon" description="PARAMPDF">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+-->
+		<param name="show_print_icon" default="1" />
+        <param name="print_icon_img_path" default="/components/com_kaprayertimes/assets/images/" />
+        <param name="print_icon_img_name" default="print_icon.png" />
+<!--
+		<param name="show_email_icon" type="list" default="1" label="Email Icon" description="PARAMEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+-->
+        <param name="show_month_dropdown" default="1" />
+        <param name="date_format" default="d.m.y" />
+        <param name="day_format" default="D" />
+        <param name="time_format" default="g:i" />
+		<param name="show_khutba_message" default="0" />
+		<param name="khutba_message" default="Friday Khutba at 12:45pm" />
+        <param name="date_column" default="1" />
+		<param name="day_column" default="1" />
+		<param name="faj_b_column" default="1" />
+		<param name="faj_j_column" default="1" />
+		<param name="sunrise_column" default="1" />
+		<param name="dhuhr_b_column" default="1" />
+		<param name="dhuhr_j_column" default="1" />
+		<param name="asr_b_column" default="1" />
+		<param name="asr_j_column" default="1" />
+		<param name="magrib_b_column" default="1" />
+		<param name="magrib_j_column" default="1" />
+		<param name="isha_b_column" default="1" />
+		<param name="isha_j_column" default="1" />
+	</params>
+    
+	<fieldset>
+		<field name="show_comp_heading" default="1" />
+		<field name="comp_heading" default="KA Prayer Times" />
+        <field name="show_page_image" default="1" />
+        <field name="img_path" default="components/com_kaprayertimes/assets/images/com_kaprayertimes.png" />
+        <field name="imagew" default="110" />
+        <field name="imageh" default="110" />
+		<field name="show_icons" default="1" />
+<!--
+        <field name="show_pdf_icon" type="list" default="1" label="PDF Icon" description="PARAMPDF">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+-->
+		<field name="show_print_icon" default="1" />
+        <field name="print_icon_img_path" default="/components/com_kaprayertimes/assets/images/" />
+        <field name="print_icon_img_name" default="print_icon.png" />
+<!--
+		<field name="show_email_icon" type="list" default="1" label="Email Icon" description="PARAMEMAIL">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</field>
+-->
+        <field name="show_month_dropdown" default="1" />
+        <field name="date_format" default="d.m.y" />
+        <field name="day_format" default="D" />
+        <field name="time_format" default="g:i" />
+		<field name="show_khutba_message" default="0" />
+		<field name="khutba_message" default="Friday Khutba at 12:45pm" />
+        <field name="date_column" default="1" />
+		<field name="day_column" default="1" />
+		<field name="faj_b_column" default="1" />
+		<field name="faj_j_column" default="1" />
+		<field name="sunrise_column" default="1" />
+		<field name="dhuhr_b_column" default="1" />
+		<field name="dhuhr_j_column" default="1" />
+		<field name="asr_b_column" default="1" />
+		<field name="asr_j_column" default="1" />
+		<field name="magrib_b_column" default="1" />
+		<field name="magrib_j_column" default="1" />
+		<field name="isha_b_column" default="1" />
+		<field name="isha_j_column" default="1" />
+	</fieldset>
+</install>

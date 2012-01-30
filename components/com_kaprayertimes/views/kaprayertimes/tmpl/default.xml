@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Default Layout">
+		<message>
+			<![CDATA[KAPRAYERTIMES_DEFAULT_LAYOUT_DESCRIPTION]]>
+		</message>
+	</layout>
+	<state>
+		<name>Default Layout</name>
+		<description>KAPRAYERTIMES_DEFAULT_LAYOUT_DESCRIPTION</description>
+        <url>
+
+        </url>
+		<params>
+
+		</params>
+		<advanced>
+
+		</advanced>
+	</state>
+</metadata>

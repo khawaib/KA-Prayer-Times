@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade" client="site">
+	<name>KA Prayer Times</name>
+	<creationDate>11/12/2010</creationDate>
+	<author>Khawaib Ahmed</author>
+	<version>1.5.x.1.2</version>
+	<description><![CDATA[KA_PRAYER_TIMES_MODULE_INSTALLED_SUCCESSFULLY]]></description>
+	<files>
+		<filename module="mod_kaprayertimes">mod_kaprayertimes.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/table.php</filename>
+		<filename>tmpl/tablethree.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_kaprayertimes.ini</language>
+		<language tag="ur-UR">ur-UR.mod_kaprayertimes.ini</language>
+	</languages>
+    
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Class Suffix for Module" />
+		<param name="cache" type="list" default="1" label="CACHING" description="Select whether to cache the content of this module">
+		<option value="1">Use global</option>
+		<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="CACHE_TIME" description="The time before the module is recached" />
+
+		<param name="@spacer" type="spacer" default="" label="" />
+		<param name="layout" type="list" default="list" label="Layout" description="The layout to display the FB latest module">
+			<option value="table">Vertical</option>
+			<option value="tablethree">Horizontal</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" />
+		<param name="showfirdayprayer" type="list" default="1" label="SHOWHFRIDAYPRAYER" description="SHOWHFRIDAYPRAYER_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="firdayprayer_text" type="textarea" cols="35" default="Friday Prayer Time:" label="FRIDAYPRAYER_TEXT" description="FRIDAYPRAYER_TEXT_DESC" />
+		<param name="firdayprayer_time" type="textarea" cols="35" default="1.00pm" label="FRIDAYPRAYER_TIME" description="FRIDAYPRAYER_TIME_DESC" />
+    		
+		<param name="@spacer" type="spacer" default="" label="" />
+		<param name="hyperlink" type="list" default="1" label="SHOWHYPERLINK" description="SHOWHYPERLINK_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="hyperlink_text" type="textarea" cols="35" default="View full timetable" label="HYPERLINK_TEXT" description="HYPERLINK_TEXT_DESC" />
+		<param name="hyperlink_link" type="textarea" cols="35" default="index.php?option=com_kaprayertimes&amp;view=kaprayertimes" width="100" label="HYPERLINK_LINK" description="HYPERLINK_LINK_DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" />
+		<param name="hyperlink2" type="list" default="0" label="SHOWHYPERLINK" description="SHOWHYPERLINK_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="hyperlink_text2" type="textarea" cols="35" default="Custome Hyperlink" label="HYPERLINK_TEXT" description="HYPERLINK_TEXT_DESC" />
+		<param name="hyperlink_link2" type="textarea" cols="35" default="#" label="HYPERLINK_LINK" description="HYPERLINK_LINK_DESC" />
+	</params>
+    
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Class Suffix for Module" />
+                <field name="cache" type="list" default="1" label="CACHING" description="Select whether to cache the content of this module">
+                <option value="1">Use global</option>
+                <option value="0">No caching</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="CACHE_TIME" description="The time before the module is recached" />
+
+                <field name="@spacer" type="spacer" default="" label="" />
+                <field name="layout" type="list" default="list" label="Layout" description="The layout to display the FB latest module">
+                    <option value="table">Vertical</option>
+                    <option value="tablethree">Horizontal</option>
+                </field>
+
+                <field name="@spacer" type="spacer" default="" label="" />
+                <field name="showfirdayprayer" type="list" default="1" label="SHOWHFRIDAYPRAYER" description="SHOWHFRIDAYPRAYER_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="firdayprayer_text" type="textarea" cols="35" default="Friday Prayer Time:" label="FRIDAYPRAYER_TEXT" description="FRIDAYPRAYER_TEXT_DESC" />
+                <field name="firdayprayer_time" type="textarea" cols="35" default="1.00pm" label="FRIDAYPRAYER_TIME" description="FRIDAYPRAYER_TIME_DESC" />
+
+                <field name="@spacer" type="spacer" default="" label="" />
+                <field name="hyperlink" type="list" default="1" label="SHOWHYPERLINK" description="SHOWHYPERLINK_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="hyperlink_text" type="textarea" cols="35" default="View full timetable" label="HYPERLINK_TEXT" description="HYPERLINK_TEXT_DESC" />
+                <field name="hyperlink_link" type="textarea" cols="35" default="index.php?option=com_kaprayertimes&amp;view=kaprayertimes" width="100" label="HYPERLINK_LINK" description="HYPERLINK_LINK_DESC" />
+
+                <field name="@spacer" type="spacer" default="" label="" />
+                <field name="hyperlink2" type="list" default="0" label="SHOWHYPERLINK" description="SHOWHYPERLINK_DESC">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+                <field name="hyperlink_text2" type="textarea" cols="35" default="Custome Hyperlink" label="HYPERLINK_TEXT" description="HYPERLINK_TEXT_DESC" />
+                <field name="hyperlink_link2" type="textarea" cols="35" default="#" label="HYPERLINK_LINK" description="HYPERLINK_LINK_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</install>
